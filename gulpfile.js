@@ -9,7 +9,8 @@ var gulp        = require('gulp'),
     imagemin    = require('gulp-imagemin'),
     pngquant    = require('imagemin-pngquant'),
     cache       = require('gulp-cache'),
-    autoprefixer= require('gulp-autoprefixer');   
+    autoprefixer= require('gulp-autoprefixer'),
+    stylus      = require('gulp-stylus');   
 
 //назва строго як в json файлі
 
@@ -22,16 +23,25 @@ gulp.task('mytask', function(){
 });
 */
 
+/*
 gulp.task('less', function() {
-    return gulp.src(['!app/less/part.less','app/less/**/*.less']) 
+    return gulp.src(['!app/less/part.less','app/less/** *.less']) 
     //  ('!app/less/main.less') щоб виключити цей файл з вибірки
     //  (['!app/less/main.less','app/less/*.less']) усі файли лесс крім main.less
-    .pipe(less())
+/*  .pipe(less())
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(gulp.dest('app/css')) //не можна писати .файл, бо створить нову папку
+    .pipe(browserSync.reload({stream: true}))
+}); 
+*/
+
+gulp.task('stylus', function() {
+    return gulp.src('app/stylus/**/*.styl') 
+    .pipe(stylus())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('app/css')) //не можна писати .файл, бо створить нову папку
     .pipe(browserSync.reload({stream: true}))
 });
-
 
 gulp.task('scripts', function() {
     return gulp.src([
@@ -45,7 +55,7 @@ gulp.task('scripts', function() {
 });
 
 
-gulp.task('css-libs', ['less'], function(){   // потестити чи коректно робить //less викликається
+gulp.task('css-libs', ['stylus'], function(){   // потестити чи коректно робить //less викликається
     return gulp.src('app/css/libs.css')
     .pipe(cssnano())
     .pipe(rename({suffix: ".min"}))
@@ -75,7 +85,8 @@ gulp.task('img', function(){
 
 //таск для слідкування за змінами файлів
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'] ,function(){ // [ ] - виконується до того як виконається основна функція
-    gulp.watch('app/less/**/*.less', ['less']);
+    //gulp.watch('app/less/**/*.less', ['less']);
+    gulp.watch('app/stylus/**/*.styl', ['stylus']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     
