@@ -1,3 +1,10 @@
+@font-face {
+  font-family: sans7, Roboto;
+  src: url("../app/fonts/basic_sans_serif_7.ttf");
+}
+.white {
+  color: #fff;
+}
 html {
   margin: 0px;
   padding: 0px;
@@ -5,6 +12,50 @@ html {
 body {
   background: #a8a8a8;
 }
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+#nav {
+  margin: 0px;
+}
+.contact {
+  background-color: #282828;
+  height: 40px;
+  padding: 10px;
+}
+.fa-icon a,
+span,
+i {
+  color: #fff;
+  padding-right: 5px;
+  margin-left: 10px;
+}
 #Sing_in {
-  color: #008000;
+  color: #5db442;
+}
+.logotype {
+  font-family: Roboto;
+  font-size: 180%;
+  color: #6c6f6f;
+  text-transform: uppercase;
+}
+.slider {
+  background-color: #4ca368;
+}
+.img-center {
+  margin: 0 auto;
+}
+.email {
+  background-color: #efefef;
+}
+.email p {
+  color: #777;
+}
+.green-button {
+  color: #fff;
+  background-color: #5db442;
+}
+.green-border {
+  border: 2px solid #5db442;
 }
