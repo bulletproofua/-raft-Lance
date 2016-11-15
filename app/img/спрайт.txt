@@ -1,0 +1,23 @@
+.icon0, .icon3, .icon5, .icon8, .icon4, 
+.icon7, .icon1, .icon2, .icon6
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.icon0 { background-position: -2px -0px; width: 69px; height: 58px; }
+.icon3 { background-position: -2px -60px; width: 65px; height: 59px; }
+.icon5 { background-position: -2px -121px; width: 63px; height: 48px; }
+.icon8 { background-position: -2px -171px; width: 63px; height: 48px; }
+.icon4 { background-position: -2px -221px; width: 60px; height: 52px; }
+.icon7 { background-position: -2px -275px; width: 60px; height: 61px; }
+.icon1 { background-position: -2px -338px; width: 56px; height: 53px; }
+.icon2 { background-position: -2px -393px; width: 54px; height: 54px; }
+.icon6 { background-position: -2px -449px; width: 47px; height: 61px; }
+
+<div class="icon0"></div>
+<div class="icon3"></div>
+<div class="icon5"></div>
+<div class="icon8"></div>
+<div class="icon4"></div>
+<div class="icon7"></div>
+<div class="icon1"></div>
+<div class="icon2"></div>
+<div class="icon6"></div>

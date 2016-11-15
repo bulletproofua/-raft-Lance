@@ -16,11 +16,10 @@ a:hover {
   text-decoration: none;
   outline: none;
 }
-#nav {
-  margin: 0px;
+.top-header {
+  background-color: #282828;
 }
 .contact {
-  background-color: #282828;
   height: 40px;
   padding: 10px;
 }
@@ -31,31 +30,192 @@ i {
   padding-right: 5px;
   margin-left: 10px;
 }
+.navbar {
+  margin: 0px;
+  padding-top: 16px;
+  min-height: 80px;
+  font-size: 14px;
+}
 #Sing_in {
-  color: #5db442;
+  margin-top: 7px;
+  padding: 8px;
+  color: #4ca368;
+  border: 1px solid #4ca368;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+}
+#Sing_in:hover {
+  color: #fff;
+  background-color: #4ca368;
 }
 .logotype {
+  font-family: sans-serif;
+  font-size: 30px;
+  position: absolute;
   font-family: Roboto;
-  font-size: 180%;
   color: #6c6f6f;
   text-transform: uppercase;
 }
+/*-- SLIDER --*/
 .slider {
+  padding: 40px;
   background-color: #4ca368;
+  text-align: center;
+/* поміняти шрифт */
+  font-family: sans-serif;
+}
+.slider h2 {
+  font-size: 48px;
+}
+.slider h3 {
+  font-size: 15px;
 }
 .img-center {
+  padding: 20px;
   margin: 0 auto;
 }
+/*--- EMAI ---*/
 .email {
   background-color: #efefef;
+  padding: 15px;
+  font-size: 12px;
 }
-.email p {
-  color: #777;
+.email-block {
+  padding-top: 10px;
 }
-.green-button {
+.email-block input {
+  -webkit-border-radius: 15px 0 0 15px;
+          border-radius: 15px 0 0 15px;
+  padding: 10px;
+  width: 183px;
+}
+.email-block button {
   color: #fff;
   background-color: #5db442;
+  -webkit-border-radius: 0 15px 15px 0;
+          border-radius: 0 15px 15px 0;
+  padding: 10px;
+  margin-left: -5px;
+  width: 80px;
 }
-.green-border {
-  border: 2px solid #5db442;
+.email-block button:hover {
+  background-color: #34a358;
+}
+.email-block p {
+  padding-top: 15px;
+  color: #777;
+  font-size: 16px;
+}
+.border {
+  border: 1px solid #b1aeae;
+}
+/*--- community ---*/
+.community {
+  background-image: url("../img/CommunityB.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  height: 620px;
+  -webkit-box-shadow: 0 0 0 1000px rgba(0,0,0,0.33) inset;
+          box-shadow: 0 0 0 1000px rgba(0,0,0,0.33) inset;
+}
+.community h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+}
+.window {
+  height: 200px;
+  background-color: rgba(255,255,255,0.1);
+  position: relative;
+}
+.block-content,
+.price {
+  background-color: #fff;
+  height: 400px;
+}
+.block-content h2,
+.price h2 {
+  text-align: center;
+  font-size: 48px;
+}
+/* з нету */
+.editions {
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.editions div {
+  position: relative;
+  border: 1px solid rgba(191,191,191,0.4);
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+.editions div:first-child {
+  -webkit-border-radius: 15px 0 0 15px;
+          border-radius: 15px 0 0 15px;
+  border-right: none;
+  padding-right: 25px;
+}
+.editions div:last-child {
+  -webkit-border-radius: 0px 15px 15px 0px;
+          border-radius: 0px 15px 15px 0px;
+  border-left: none;
+  padding-left: 15px;
+}
+.editions div:first-child:after {
+  content: 'OR';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  font-size: 80%;
+  right: -12px;
+  bottom: 2px;
+  background-color: #4ca368;
+  color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  line-height: 200%;
+  z-index: 99;
+}
+.edition-selected {
+  color: #fff !important;
+  background-color: #5db442 !important;
+}
+/* з нету */
+/*--- feature ---*/
+.feature {
+  background-color: #ececec;
+  height: auto;
+}
+.icon-color {
+  color: #5db442;
+}
+.block-container {
+  max-width: 270px;
+  margin: 7px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+.block-container i {
+  font-size: 600%;
+  padding: 15px;
+  border-bottom: 1px solid #c9c9c9;
+}
+.block-container p {
+  color: #808080;
+  padding: 20px;
+}
+.block-container:hover,
+.block-container:hover i,
+.block-container:hover p {
+  background-color: #5db442;
+  color: #fff;
+}
+footer {
+  background-color: #efefef;
+  height: 400px;
 }

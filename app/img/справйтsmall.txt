@@ -1,0 +1,10 @@
+.process, .singup, .comunityedition
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.process { background-position: -2px -0px; width: 17px; height: 16px; }
+.singup { background-position: -2px -18px; width: 15px; height: 14px; }
+.comunityedition { background-position: -2px -34px; width: 14px; height: 13px; }
+
+<div class="process"></div>
+<div class="singup"></div>
+<div class="comunityedition"></div>
