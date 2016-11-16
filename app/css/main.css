@@ -216,6 +216,28 @@ i {
   color: #fff;
 }
 footer {
-  background-color: #efefef;
+  background-color: #cecece;
   height: 400px;
+}
+footer a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.footer-block {
+  text-align: center;
+  position: absolute;
+}
+.footer-block input {
+  padding: 10px;
+}
+.footer-block button {
+  color: #fff;
+  background-color: #5db442;
+  padding: 10px;
+  margin-left: -5px;
+  width: 40px;
+}
+.footer-block button:hover {
+  background-color: #34a358;
 }
