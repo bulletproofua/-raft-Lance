@@ -6,31 +6,127 @@
 
 button-color = #5db442
 color-contact = #282828
+color-icon = #4f792b
 
 
 .white{
     color: #ffffff;
 }
     
-html
+*{
     margin 0px
     padding 0px
-    
+}
+
 body 
     background #a8a8a8
-
+     
+input, button 
+    outline none
 
 a:hover    
     text-decoration none
     outline none
+.S {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.S-r0 {
+    width: 69px;
+    height: 58px;
+    background-position: -3px -3px;      
+}
+.S-r1 {
+    width: 56px;
+    height: 53px;
+    background-position: -78px -3px;
+}
+.S-r2 {
+    width: 54px;
+    height: 54px;
+    background-position: -140px -3px;
+}
+.S-r3 {
+    width: 65px;
+    height: 59px;
+    background-position: -200px -3px;
+}
+.S-r4 {
+    width: 60px;
+    height: 52px;
+    background-position: -3px -68px;
+}
+.S-r5 {
+    width: 63px;
+    height: 48px;
+    background-position: -69px -68px;
+}
+.S-r6 {
+    width: 47px;
+    height: 61px;
+    background-position: -138px -68px;
+}
+.S-r7 {
+    width: 60px;
+    height: 61px;
+    background-position: -191px -68px;
+}
+.S-r8 {
+    width: 63px;
+    height: 48px;
+    background-position: -3px -135px;
+}
+
+.S-rComunityEdition {
+    width: 14px;
+    height: 13px;
+    background-position: -259px -70px;
+}
+
+.S-rProcess {
+    width: 17px;
+    height: 16px;
+    background-position: -259px -93px;
+}
+
+.S-rSingUp {
+    width: 15px;
+    height: 14px;
+    background-position: -259px -119px;
+}
+
+.S-wComunityEdition {
+    width: 14px;
+    height: 13px;
+    background-position: -284px -134px;
+}
+
+.S-wProcess {
+    width: 17px;
+    height: 16px;
+    background-position: -308px -134px;
+}
+
+.S-wSingUp {
+    width: 15px;
+    height: 14px;
+    background-position: -283px -160px;
+}
+
 
 .top-header
     background-color color-contact
      
-.contact    
-    height 40px
+.contact  
     padding 10px
+
+.block1-pos
+    text-align left
     
+.block2-pos
+    text-align right
     
 .fa-icon a, span , i 
     color  white
@@ -45,15 +141,14 @@ a:hover
    
     
 #Sing_in
-    
-    margin-top 7px
-    padding 8px    
-    color:#4ca368 ;
-    border: 1px solid #4ca368;
-    border-radius: 15px;
+    padding 8px 25px
+    margin-top 5px
+    color #4ca368 
+    border 1px solid #4ca368
+    border-radius 30px
     &:hover{
-        color: #ffffff;
-        background-color: #4ca368;
+        color #ffffff
+        background-color #4ca368
     }
     
 .logotype
@@ -72,17 +167,16 @@ a:hover
     text-align center
     /* поміняти шрифт */
     font-family sans-serif
-    h2
-        font-size 48px
     h3
-        font-size 15px
+        font-size 3em
+    h4
+        font-size 1.4em
     
 
 .img-center{
     padding 20px
     margin: 0 auto;
 }
-     
 
 /*--- EMAI ---*/
 .email   
@@ -116,107 +210,296 @@ a:hover
 
 /*--- community ---*/
 .community
+    font-family Roboto
+    box-sizing border-box
+    padding 20px 0px
     background-image  url(../img/CommunityB.png)
     background-position 50% 50% 
     background-repeat no-repeat
-    background-clip border-box
-    height: 620px;
-    box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.33) inset;
-    h2
-        text-align center
+    background-clip border-box 
+    box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.42) inset;
+
+.text-community
+    padding 25px 0px
+    h3
+        text-align center           
         color #ffffff
-        font-size 48px
+        font-size 3.5em
+        text-shadow 3px 2px 1px rgba(0, 0, 0, 0.33)
+
 .window
-    height 200px    
-    background-color rgba(255, 255, 255, 0.1)
-    position relative
+    text-shadow 3px 2px 1px rgba(0, 0, 0, 0.33)
+    background-color rgba(255, 255, 255, 0.15)
+    text-align center
+    color  white
+    
+.window:hover  .S-r0{
+    background-position: -74px -137px;   
+}
 
+.angle
+    span  
+        display block
+        font-size 3em
+    i:hover
+        color gainsboro
+        cursor pointer
+    
+.singup
+    padding-bottom 30px
+    display flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content center
+  
+    
+.fa-icons
+        margin 10px
+        padding 10px
+        padding-top 30px
 
-.block-content
- 
+.com-text
+    text-align left
+    h2
+        margin-bottom 5px
+        font-size 2.2em
+        color #5db442
+        text-shadow 1px 1px 3px rgba(0,0,0,0.3) 
+    ul         
+        float left
+        list-style none
+        margin 0
+        padding-left 0     
+        font-size 1.25em
+    
+.community-icon
+    box-sizing border-box
+    padding 50px 0px
+    text-align center
+    
+    i
+        font-size 140%
+        margin 0px
+        padding 25px
+        border 1px solid color-icon
+        border-radius 50%
+        line-height 50% 
+        box-shadow  0 0 3px rgba(0,0,0,0.3)
+        background-color color-icon
+        
+    i:hover
+        border 1px solid #ffffff
+        background-color #ffffff 
+        color  #5db442
+        
+    p
+        padding-top 5px
+        color white
+            
 /*--- Price ---*/
 .price  
+     box-sizing border-box
      background-color #ffffff
-     height 400px
      h2
          text-align center
          font-size 48px
         
- 
-/* з нету */
-.editions{
-    width: 290px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
 
-.editions div{
+.swich-button
+    box-sizing border-box
+    margin 20px auto
+    text-align center
     
-    position: relative;
-    border: 1px solid rgba(191, 191, 191, 0.4);
-    display: inline-block;
-    padding: 5px;
-    cursor: pointer;
-}
+    a
+        text-decoration: none        
+        
+    i 
+        position relative 
+        color #ffffff      
+        padding 6px        
+        background-color #419a5d
+        border-radius: 100%
+        
+.first    
+    color:#4ca368 
+    border: 1px solid #aaaaaa;
+    padding 10px
+    padding-right 20px
+    border-radius 20px 0px 0px 20px
+    margin-right -33px
+    
+    &:hover {
+        color #ffffff
+        background-color #4ca368
+    }
 
-.editions div:first-child{
-    border-radius 15px 0 0 15px
-    border-right: none;
-    padding-right:25px;
-}
-
-.editions div:last-child{
-    border-radius 0px 15px 15px 0px
-    border-left: none;
-    padding-left:15px;
-}
-
-.editions div:first-child:after{
-    content: 'OR';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    font-size: 80%;
-    right: -12px;
-    bottom: 2px;
-    background-color: #4ca368;
-    color: #ffffff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 200%;
-    z-index: 99;
-}
-.edition-selected{
-    color: #ffffff !important;
-    background-color: #5db442 !important;
-}
-/* з нету */
-
+.second
+    color white
+    border 1px solid #aaaaaa
+    background-color #4ca368 
+    padding 10px
+    padding-left 20px
+    border-radius 0px 20px 20px 0px
+    margin-left -33px    
+    &:hover {
+        color #4ca368
+        background-color white
+    }
      
-     
+    
+.price-container
+    margin 20px
+    padding-bottom 40px
+    font-family Roboto
+
+.price-block
+    position relative
+    width 270px
+    height 400px
+    margin 10px
+    border 1px solid #ececec
+    text-align center
+    box-shadow  2px 2px 4px rgba(0,0,0,0.2);
+   
+    
+    h3 
+        text-transform uppercase
+        
+    hr
+        margin-top 0px
+        border none
+        width 70px       
+        height 3px
+        background-color #ececec
+        
+    &:hover hr {        
+        background-color #5db442
+    }
+        
+    
+ 
+.price-price
+    position absolute
+    left 90px
+    top 70px
+    padding 20px
+    border 1px solid #5db442
+    border-radius 50%
+    line-height 50% 
+    box-shadow  0 0 3px rgba(0,0,0,0.3);
+    background-color #ffffff
+    font-size: 1em
+    
+    p
+        font-size 1em
+        
+    p:last-child
+        font-size: 80%
+        color: #8b8b8b
+        font-style: italic
+
+    p:last-child
+        font-size: 80%
+        color: #8b8b8b
+        font-style: italic
+
+
+.price-line
+    /* КОСТИЛЬ */
+    padding-top 18%
+    border-bottom  1px solid  #ececec
+    
+.price-item
+    position absolute
+    top 180px
+    left 70px
+    
+   
+    color #929292
+    i
+        color  green
+        padding-right 4px
+    p
+        color #777777
+        font-weight 500
+        font-size 90%
+.gray
+    color #cccccc !important
+    
+
+
+.price-button        
+     button 
+        position absolute
+        bottom 20px
+        left 80px
+        text-transform uppercase        
+        color #000000 
+        background-color white
+        border-radius 25px      
+        width 120px
+        padding 8px
+        
+    button::-moz-focus-inner {
+        padding 0
+        border 0
+    }
+    
+    button:hover 
+        color white
+        background-color #5db442
+    
 /*--- feature ---*/
 .feature
+     padding-bottom 40px      
      background-color #ececec
-     height auto
      
 .icon-color
     color button-color
-     
+    
+.feature-text
+    margin 20px 0px
+    h3
+        padding 10px 0
+        text-align center
+        font-size 2.6em
+   
+
 .block-container{
-    max-width 270px
-    margin 7px
+   
+    box-sizing border-box
+    margin-top 10px
+    height 360px
+    text-align center
     background-color #ffffff
     border 1px solid #e8e8e8
-    cursor pointer    
+    cursor pointer
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     i {
-        font-size 600%
-        padding 15px
-        border-bottom 1px solid #c9c9c9
+        min-height 55px
+        text-align center
+        margin 20px
+        margin-top 40px
+   
     }    
     p {
         color #808080
         padding 20px
-    }   
+    }
+    
+    h3 {
+        font-family Roboto
+    }
+    
+    hr{
+        
+        margin 0px auto
+        border none
+        width 70px       
+        height 2px
+        background-color #ececec
+    }
+        
 }
 
 .block-container:hover, 
@@ -225,34 +508,147 @@ a:hover
     background-color: button-color;
     color: #ffffff;
 }
+    
+.block-container:hover .S-r1 {
+    background-position: -153px -137px;
+}
+.block-container:hover .S-r2 {
+    background-position: -219px -143px;
+}
+.block-container:hover .S-r3 {
+    background-position: -5px -207px;
+}
+.block-container:hover .S-r4 {
+    background-position: -80px -207px;
+}
+.block-container:hover .S-r5 {
+    background-position: -150px -207px;
+}
+.block-container:hover .S-r6 {
+    background-position: -223px -207px;
+}
+.block-container:hover .S-r7 {
+    background-position: -283px -5px;
+}
+.block-container:hover .S-r8 {
+    background-position: -286px -76px;
+}
 
 
 
      
 footer 
-     background-color #cecece
-     height 400px
+     padding 20px     
+     background-color #efefef    
      a  
          display block
          text-transform uppercase
-         font-size 13px
+         text-decoration none
+         color #575757
+         font-size 0.8em
+         padding-top 5px
+
+     h3
+       margin 8px
+       font-size 1.2em
+       font-family Roboto
+       
+     h4    
+       font-size 1em
+       font-family serif
+       font-family Roboto
          
-         
+.footer-icon
      
-     
-.footer-block
-    text-align center
+.footer-block-main
+    margin 0px 0px 20px 0px
+    padding 0px
+
+    
+.footer-block 
+    margin 0px
+    padding 0px
+
+    
+.footer-button
     position absolute
+    width 100%
     input
-       padding 10px              
+       padding 10px
+       width 80%
+    
+    button::-moz-focus-inner {
+        padding 0
+        border 0
+    }  
     button
         color #ffffff 
         background-color: button-color        
         padding 10px
         margin-left -5px
-        width 40px
+        width 10%
     button:hover 
-         background-color: #34a358
+         background-color #34a358     
+         
+@media screen and (max-width: 460px){
+.footer-block {
+    display block
+}
+} 
+
+@media screen and (max-width: 572px) {
+
+#sing-in {
+  padding 8px 85px
+  color #4ca368
+  border 1px solid #4ca368
+  border-radius 30px
+}
+
+}
+
+
+@media screen and (max-width: 768px){
+
+.block-container{
+    margin  7px 10%
+}
+
+}
     
-    
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+.block1-pos {
+    text-align center
+}
+.block2-pos {
+    text-align center
+}
+
+.footer-block-main{
+    text-align center
+    padding-bottom 40px
+}
+.footer-block {
+    text-align center
+}
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+ 
+} 
+@media screen and (min-width: 1200px) {
+ 
+}        
+         
+
   
