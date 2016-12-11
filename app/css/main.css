@@ -305,6 +305,9 @@ i {
   color: #fff;
 }
 /*--- Price ---*/
+.price-row {
+  display: none;
+}
 .price {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -382,6 +385,7 @@ i {
   width: 70px;
   height: 3px;
   background-color: #ececec;
+  margin: 0px auto;
 }
 .price-block:hover hr {
   background-color: #5db442;
@@ -389,8 +393,8 @@ i {
 .price-price {
   position: absolute;
   left: 90px;
-  top: 70px;
-  padding: 20px;
+  top: 60px;
+  padding: 30px 25px;
   border: 1px solid #5db442;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -455,6 +459,35 @@ button::-moz-focus-inner {
 button:hover {
   color: #fff;
   background-color: #5db442;
+}
+.sl {
+  padding: 0px;
+  background-color: #fff;
+  margin: 40px;
+}
+.carousel-inner > .item > .price-block {
+  margin: 0px auto;
+}
+.carousel {
+  height: 460px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.carousel-control {
+  background-color: none;
+  opacity: 0.2;
+  width: 5%;
+}
+.carousel-control:hover {
+  background-color: none;
+  opacity: 0.3;
+}
+.carousel-indicators .active {
+  background-color: #008000;
+}
+.carousel-indicators li {
+  border: 1px solid #008000;
 }
 /*--- feature ---*/
 .feature {

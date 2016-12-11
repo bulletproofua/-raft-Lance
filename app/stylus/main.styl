@@ -297,6 +297,10 @@ a:hover
         color white
             
 /*--- Price ---*/
+.price-row
+    display none
+    
+    
 .price  
      box-sizing border-box
      background-color #ffffff
@@ -371,6 +375,7 @@ a:hover
         width 70px       
         height 3px
         background-color #ececec
+        margin 0px auto
         
     &:hover hr {        
         background-color #5db442
@@ -381,8 +386,8 @@ a:hover
 .price-price
     position absolute
     left 90px
-    top 70px
-    padding 20px
+    top 60px
+    padding 30px 25px
     border 1px solid #5db442
     border-radius 50%
     line-height 50% 
@@ -448,7 +453,42 @@ a:hover
     button:hover 
         color white
         background-color #5db442
+        
+        
+        
+.sl
+    padding 0px
+    background-color white
+    margin 40px
     
+.carousel-inner > .item > .price-block {
+      margin: 0px auto;
+}
+.carousel
+    height 460px
+    width 100%
+    padding 0
+    margin 0
+    
+.carousel-control
+    background-color none
+    opacity: .2
+    width 5%
+ 
+
+.carousel-control:hover
+    background-color none
+    opacity: .3
+    
+
+    
+.carousel-indicators .active {
+    background-color green
+}
+
+.carousel-indicators li {
+    border 1px solid green
+}
 /*--- feature ---*/
 .feature
      padding-bottom 40px      
